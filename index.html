@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Spotify┃bootstrap </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/icons/spotify.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-fluid {
+      height: 100%;
+    }
+
+    .row {
+      height: 100%;
+    }
+
+    .menu-lateral,
+    .principal,
+    .menu-direito {
+      height: 100%;
+    }
+
+    .principal {
+      overflow-y: auto;
+    }
+
+    .margin {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body class="container-fluid">
+  <div class="row">
+    <!--Menu lateral esquerdo  -->
+    <aside class="col-lg-2 menu-lateral p-3 bg-dark">
+      <nav>
+        <ul class="list-unstyled text-light p-3">
+          <li class="mb-3"><img src="./assets/icons/menu1.png" alt="menu"> </li>
+          <li class="mb-3"><img class="pe-2" src="./assets/icons/casa.png" alt="casa"> Início</li>
+          <li class="mb-3"><img class="pe-2" src="./assets/icons/nave.png" alt="Nave"> Navegar</li>
+          <li class="mb-3"><img class="pe-2" src="./assets/icons/radi.png" alt="Som"> Rádio </li>
+        </ul>
+
+        <ul class="list-unstyled text-secondary p-3">
+          <li>SUA BIBLIOTECA</li>
+          <li>Feito para você</li>
+          <li>Tocados recentem...</li>
+          <li>Músicas curtidas</li>
+          <li>Álbuns</li>
+          <li>Artista</li>
+          <li>Podcasts</li>
+        </ul>
+
+        <ul class="list-unstyled text-secondary p-3 mb-2">
+          <li>PLAYLISTS</li>
+          <li>Infantil</li>
+          <li>Toy Story Playlists</li>
+          <li>Louvores</li>
+          <li>Pop interna...</li>
+          <li>Louvores Internaci...</li>
+
+
+
+        </ul>
+
+      </nav>
+
+    </aside>
+
+    <!-- Centro -->
+    <div class="col-lg-8 principal pb-5 p-3 bg-dark bg-gradient">
+      <nav class="nav justify-content-between">
+        <span>
+          <img src="./assets/icons/menor.png" alt="menor">
+          <img src="./assets/icons/maior.png" alt="maior">
+          <a class="pt-1 pb-2 pe-3 ps-1 ms-2 bg-light text-decoration-none rounded-pill"><img src="./assets/icons/lupa.svg">
+            <input type="text" class="busca  p-0 w-50 text-start form-inline bg-light border-0 "
+              placeholder="Buscar"></a>
+
+        </span>
+        <span>
+          <img src="./assets/icons/conta.png" alt="conta do usuario">
+          <a href="" class="text-decoration-none text-white">vanabananasilva</a>
+          <img src="./assets/icons/seta.png" alt="seta para expandir">
+        </span>
+      </nav>
+      <h1 class="mt-5 pt-5 text-white">Artistas</h1>
+      <div class="border-end-0 border-start-0 border border-white">
+        <button class="filtro mt-3 text-white bg-dark bg-gradient border-0 "> <img src="./assets/icons/lupa-16.png"
+            alt="filtro"> Filtrar </button>
+        <div class="mt-5 mb-2 pt-5 text-white">
+          <label class="fw-bold" for="">Classificado por</label>
+          <select class="w-25 bg-dark bg-gradien border-0 text-white " name="" id="">
+            <option value="">Nome</option>
+            <option value="estilo">Gênero</option>
+            <option value="letra">Letra</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around mt-5 mb-5 pb-5">
+        <figure class="figure">
+          <img class="figure-img img-fluid rounded-pill" src="./assets/imagens/foto1.png" alt="Justin Bieber ">
+          <figcaption class="figure-caption text-center text-white fw-bold">Justin Bieber</figcaption>
+        </figure>
+        <figure class="figure">
+          <img class="figure-img img-fluid rounded-pill" src="./assets/imagens/foto2.png" alt="Radio-company">
+          <figcaption class="figure-caption text-center text-white fw-bold">Radio company</figcaption>
+        </figure>
+        <figure class="figure">
+          <img class="figure-img img-fluid rounded-pill" src="./assets/imagens/foto3.jpg" alt="Metallica">
+          <figcaption class="figure-caption text-center text-white fw-bold">Metallica</figcaption>
+        </figure>
+        <figure>
+          <img class="figure-img img-fluid rounded-pill" src="./assets/imagens/foto4.png" alt=" The Weeknd">
+          <figcaption class="figure-caption text-center text-white fw-bold">The Weeknd</figcaption>
+        </figure>
+
+      </div>
+
+      <div class="text-light">
+        <h2 class="pb-4">Feito para Geovana</h2>
+        <div class="d-flex justify-content-around gap-3">
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/3buwFfY33H32wfZ6X9poV3?utm_source=generator&theme=0" width="50%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/1znPMY3zq78mVuTAmOA9O7?utm_source=generator&theme=0" width="50%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/52DKGPMQ21DauCR19pQ0BK?utm_source=generator&theme=0" width="50%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+          <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/5E75Cr0oqxGoX0YYwdC3nZ?utm_source=generator&theme=0" width="50%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    <!-- Menu--lateral-- direito -->
+
+    <aside class="col-lg-2 menu-direito p-3 bg-dark text-white">
+      <div class="encontrar-amigos fw-bold ">
+        <p class=" fs-5 text-center">Veja o que seus amigos estão tocando</p>
+        <button class="fw-bold mt-4 bg-dark text-white border border-light rounded-pill">ENCONTRAR AMIGOS</button>
+      </div>
+
+    </aside>
+
+
+
+  </div>
+</body>
+
+</html>
