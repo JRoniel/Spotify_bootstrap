@@ -4,4 +4,4 @@ Projeto desenvolvido com html,css e bootstrap
 
 ## Screenshots
 
-![Imagem do projeto](./assets/imagens/spotify_bootstrap.png)
+![Imagem do projeto](./assets/imagens/apresetation.png)
